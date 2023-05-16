@@ -1,16 +1,14 @@
-from django.template.response import TemplateResponse
-from django.http import Http404, HttpResponse
-from rest_framework.authtoken.models import Token
-from rest_framework import status, exceptions
+from django.http import Http404
+from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.shortcuts import render, redirect
-from rest_framework.parsers import JSONParser
+
+
 
 
 from api.models import Tarefa
-from api.serializers import TarefaSerializer, UserSerializer, LoginSerializer
+from api.serializers import TarefaSerializer, UserSerializer
 
 
 class ListCreateTarefa(APIView):
