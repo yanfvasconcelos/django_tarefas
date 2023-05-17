@@ -45,7 +45,7 @@ class DetailUpdateDeleteTarefa(APIView):
    
     def get(self, request, pk):
         tarefa = self.get_tarefa(pk)
-        serializer = TarefaSerializer(tarefa, data=request.data)
+        serializer = TarefaSerializer(tarefa)
         return Response(serializer.data)
     
 
