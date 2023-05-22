@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)4*!3h5-@0emxt#e14#le(!$*)=03-zdtk#g1ur5%(bf^euj18
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(config('DEBUG'))
 
-ALLOWED_HOSTS = ['django-tarefas.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['django-tarefas.onrender.com', 'localhost', '127.0.0.1', 'http://localhost:5500/login2.html']
 
 
 # Application definition
