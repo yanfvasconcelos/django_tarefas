@@ -66,7 +66,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = [
-    'django-tarefas.onrender.com',
+    'https://django-tarefas.onrender.com',
     'http://localhost:5500/',
     'https://tmmanager.netlify.app'
 ]
